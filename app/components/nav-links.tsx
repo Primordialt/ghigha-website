@@ -16,7 +16,11 @@ export function NavLinks() {
           <Link
             key={link.href}
             href={link.href}
-            className={isActive ? "font-medium text-slate-900" : "text-slate-600 hover:text-slate-900"}
+            className={
+              isActive
+                ? "font-medium text-slate-900"
+                : "text-slate-600 transition hover:text-slate-900"
+            }
           >
             {link.label}
           </Link>

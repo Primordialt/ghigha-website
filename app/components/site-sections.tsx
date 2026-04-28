@@ -19,7 +19,10 @@ export function ServicesSection({
         <p className="mt-4 max-w-2xl text-slate-600">{description}</p>
         <div className="mt-10 grid gap-5 md:grid-cols-2">
           {items.map((service) => (
-            <article key={service.title} className="rounded-2xl border border-slate-100 p-6">
+            <article
+              key={service.title}
+              className="rounded-2xl border border-slate-100 bg-white p-6"
+            >
               <h3 className="text-lg font-medium">{service.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-600">
                 {service.description}
@@ -44,7 +47,7 @@ export function StepsSection({ title = "How It Works", items }: StepsSectionProp
         <h2 className="text-3xl font-semibold tracking-tight">{title}</h2>
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {items.map((step, index) => (
-            <article key={step.title} className="rounded-2xl bg-white p-6">
+            <article key={step.title} className="rounded-2xl border border-slate-100 bg-white p-6">
               <p className="text-sm font-medium text-slate-500">Step {index + 1}</p>
               <h3 className="mt-2 text-lg font-medium">{step.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-600">{step.description}</p>
@@ -71,7 +74,7 @@ export function PricingSection({ description, tiers }: PricingSectionProps) {
           {tiers.map((tier) => (
             <article
               key={tier.name}
-              className={`rounded-2xl border p-6 ${
+              className={`rounded-2xl border p-6 shadow-sm ${
                 tier.featured ? "border-slate-900 bg-slate-900 text-white" : "border-slate-100"
               }`}
             >
@@ -133,7 +136,7 @@ export function WhyChooseSection({
           {reasons.map((reason) => (
             <li
               key={reason}
-              className="rounded-xl border border-slate-100 px-5 py-4 text-sm text-slate-700"
+              className="rounded-xl border border-slate-100 bg-white px-5 py-4 text-sm text-slate-700"
             >
               {reason}
             </li>

@@ -12,13 +12,13 @@ export default function AboutPage() {
       />
       <section className="border-t border-slate-100 py-20">
         <div className="mx-auto grid w-full max-w-6xl gap-8 px-6 lg:grid-cols-2 lg:px-8">
-          <article className="rounded-2xl border border-slate-100 p-7">
+          <article className="rounded-2xl border border-slate-100 bg-white p-7">
             <h2 className="text-2xl font-semibold tracking-tight">Our mission</h2>
             <p className="mt-4 text-slate-600">
               We believe your time should be spent on growth, not routine work.
             </p>
           </article>
-          <article className="rounded-2xl border border-slate-100 p-7">
+          <article className="rounded-2xl border border-slate-100 bg-white p-7">
             <h2 className="text-2xl font-semibold tracking-tight">Our approach</h2>
             <p className="mt-4 text-slate-600">
               Our mission is simple: provide reliable people and systems that help

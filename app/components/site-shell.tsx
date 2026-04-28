@@ -68,7 +68,7 @@ type PageHeroProps = {
 export function PageHero({ eyebrow, title, description }: PageHeroProps) {
   return (
     <section className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8 lg:py-24">
-      <span className="inline-flex rounded-full border border-slate-200 px-3 py-1 text-xs font-medium text-slate-600">
+      <span className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">
         {eyebrow}
       </span>
       <h1 className="mt-6 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
