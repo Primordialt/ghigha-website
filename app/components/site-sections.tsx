@@ -114,7 +114,9 @@ export function PricingSection({ description, tiers }: PricingSectionProps) {
                 ))}
               </ul>
               <Link
-                href="/contact"
+                href={tier.paymentLink ?? "/contact"}
+                target={tier.paymentLink ? "_blank" : undefined}
+                rel={tier.paymentLink ? "noopener noreferrer" : undefined}
                 className={`mt-8 inline-flex w-full justify-center rounded-md px-4 py-2.5 text-sm font-medium transition ${
                   tier.featured
                     ? "bg-white text-slate-900 hover:bg-slate-100"

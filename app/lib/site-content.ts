@@ -17,6 +17,7 @@ export type PricingTier = {
   featured: boolean;
   badge?: string;
   variant?: "default" | "premium";
+  paymentLink?: string;
 };
 
 export const navLinks = [
@@ -79,6 +80,7 @@ export const pricing: PricingTier[] = [
     ],
     cta: "Get Started",
     featured: false,
+    paymentLink: "https://buy.stripe.com/bJe9AU2KC1TQenAeQD5Vu08",
   },
   {
     name: "Growth Plan",
@@ -97,6 +99,7 @@ export const pricing: PricingTier[] = [
     cta: "Get Started",
     featured: true,
     badge: "Most Popular",
+    paymentLink: "https://buy.stripe.com/28E8wQdpgfKG4N05g35Vu09",
   },
   {
     name: "Titan Suite",
