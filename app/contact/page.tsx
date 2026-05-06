@@ -11,7 +11,7 @@ export default function ContactPage() {
       <section className="border-t border-slate-100 py-20">
         <div className="mx-auto w-full max-w-3xl px-6 lg:px-8">
           <div className="rounded-2xl border border-slate-100 p-8">
-            <h2 className="text-2xl font-semibold tracking-tight">Book a free call</h2>
+            <h2 className="text-2xl font-semibold tracking-tight">Reach Us Instantly</h2>
             <p className="mt-3 text-slate-600">
               Email us at{" "}
               <a
@@ -25,7 +25,7 @@ export default function ContactPage() {
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="rounded-xl bg-slate-50 p-4">
                 <p className="text-xs uppercase tracking-wide text-slate-500">Phone</p>
-                <p className="mt-1 font-medium text-slate-900">+1702941059</p>
+                <p className="mt-1 font-medium text-slate-900">+16466318665</p>
               </div>
               <div className="rounded-xl bg-slate-50 p-4">
                 <p className="text-xs uppercase tracking-wide text-slate-500">Hours</p>

@@ -20,6 +20,8 @@ export type PricingTier = {
   paymentLink?: string;
 };
 
+export const calendlyLink = "https://calendly.com/elliott-primordialt/30min";
+
 export const navLinks = [
   { href: "/services", label: "Services" },
   { href: "/pricing", label: "Pricing" },
@@ -119,6 +121,7 @@ export const pricing: PricingTier[] = [
     cta: "Speak With Our Team",
     featured: false,
     variant: "premium",
+    paymentLink: calendlyLink,
   },
 ];
 

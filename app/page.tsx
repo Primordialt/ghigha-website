@@ -6,7 +6,7 @@ import {
   StepsSection,
   WhyChooseSection,
 } from "./components/site-sections";
-import { pricing, reasons, services, steps } from "./lib/site-content";
+import { calendlyLink, pricing, reasons, services, steps } from "./lib/site-content";
 
 export default function Home() {
   return (
@@ -25,7 +25,9 @@ export default function Home() {
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link
-              href="/contact"
+              href={calendlyLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-md bg-slate-900 px-6 py-3 text-center text-sm font-medium text-white transition hover:bg-slate-700"
             >
               Book a Free Consultation

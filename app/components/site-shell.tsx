@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { calendlyLink } from "../lib/site-content";
 import { NavLinks } from "./nav-links";
 
 type SiteShellProps = {
@@ -24,7 +25,9 @@ export function SiteHeader() {
         </Link>
         <NavLinks />
         <Link
-          href="/contact"
+          href={calendlyLink}
+          target="_blank"
+          rel="noopener noreferrer"
           className="rounded-md bg-slate-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-slate-700"
         >
           Book a Free Call
@@ -48,7 +51,9 @@ export function CtaBanner({ title, body, buttonLabel }: CtaBannerProps) {
           <h2 className="text-3xl font-semibold tracking-tight">{title}</h2>
           <p className="mx-auto mt-4 max-w-2xl text-slate-200">{body}</p>
           <Link
-            href="/contact"
+            href={calendlyLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-8 inline-flex rounded-md bg-white px-6 py-3 text-sm font-medium text-slate-900 transition hover:bg-slate-100"
           >
             {buttonLabel}
@@ -93,7 +98,12 @@ export function SiteFooter() {
           <a href="#" className="hover:text-slate-700">
             Terms
           </a>
-          <Link href="/contact" className="hover:text-slate-700">
+          <Link
+            href={calendlyLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-slate-700"
+          >
             Contact
           </Link>
         </div>
