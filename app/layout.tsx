@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ghigha",
-  description: "Reliable virtual assistants for growing businesses.",
+  description:
+    "Premium virtual assistants and managed operations support teams for operational efficiency and reliable execution.",
 };
 
 export default function RootLayout({

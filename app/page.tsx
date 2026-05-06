@@ -13,27 +13,26 @@ export default function Home() {
     <SiteShell>
       <section className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
         <div className="space-y-8">
-          <span className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">
+          <span className="inline-flex rounded-lg border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">
             Business Support & Outsourcing
           </span>
           <h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-            Hire Reliable Virtual Assistants in 24 hours
+            Hire Reliable Virtual Assistants and Operations Support Teams
           </h1>
           <p className="max-w-xl text-lg leading-relaxed text-slate-600">
-            Stop spending your time on repetitive tasks. We provide trained virtual
-            assistants who handle your daily operations so you can focus on growing your
-            business.
+            We help businesses streamline operations with dedicated virtual assistants and
+            managed support systems.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link
               href="/contact"
-              className="rounded-full bg-slate-900 px-6 py-3 text-center text-sm font-medium text-white transition hover:bg-slate-700"
+              className="rounded-lg bg-slate-900 px-6 py-3 text-center text-sm font-medium text-white transition hover:bg-slate-700"
             >
-              Book a Free Call
+              Book a Free Consultation
             </Link>
             <Link
               href="/pricing"
-              className="rounded-full border border-slate-200 px-6 py-3 text-center text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:text-slate-900"
+              className="rounded-lg border border-slate-200 px-6 py-3 text-center text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:text-slate-900"
             >
               View Pricing
             </Link>

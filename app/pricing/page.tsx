@@ -7,11 +7,11 @@ export default function PricingPage() {
     <SiteShell>
       <PageHero
         eyebrow="Pricing"
-        title="Simple plans that grow with your business"
-        description="Choose the level of support that fits your current stage. Start small, then scale when you need more hands."
+        title="Premium operational support, built to run your business smoothly"
+        description="Choose the level of operational support you need today — from a dedicated assistant to a fully managed remote operations team."
       />
       <PricingSection
-        description="Clear, flexible plans based on your current stage."
+        description="High-value support focused on operational efficiency, systems, and reliable execution."
         tiers={pricing}
       />
       <CtaBanner

@@ -74,10 +74,27 @@ export function PricingSection({ description, tiers }: PricingSectionProps) {
           {tiers.map((tier) => (
             <article
               key={tier.name}
-              className={`rounded-2xl border p-6 shadow-sm ${
-                tier.featured ? "border-slate-900 bg-slate-900 text-white" : "border-slate-100"
+              className={`relative rounded-2xl border p-6 shadow-sm ${
+                tier.featured
+                  ? "border-slate-900 bg-slate-900 text-white"
+                  : tier.variant === "premium"
+                    ? "border-slate-300 bg-white"
+                    : "border-slate-100 bg-white"
               }`}
             >
+              {tier.badge ? (
+                <div className="absolute -top-3 left-6">
+                  <span
+                    className={`inline-flex rounded-lg px-3 py-1 text-xs font-medium ${
+                      tier.featured
+                        ? "bg-white text-slate-900"
+                        : "border border-slate-200 bg-slate-50 text-slate-700"
+                    }`}
+                  >
+                    {tier.badge}
+                  </span>
+                </div>
+              ) : null}
               <h3 className="text-lg font-medium">{tier.name}</h3>
               <p
                 className={`mt-2 text-3xl font-semibold ${
@@ -98,10 +115,12 @@ export function PricingSection({ description, tiers }: PricingSectionProps) {
               </ul>
               <Link
                 href="/contact"
-                className={`mt-8 inline-flex w-full justify-center rounded-full px-4 py-2.5 text-sm font-medium transition ${
+                className={`mt-8 inline-flex w-full justify-center rounded-lg px-4 py-2.5 text-sm font-medium transition ${
                   tier.featured
                     ? "bg-white text-slate-900 hover:bg-slate-100"
-                    : "bg-slate-900 text-white hover:bg-slate-700"
+                    : tier.variant === "premium"
+                      ? "border border-slate-200 bg-white text-slate-900 hover:bg-slate-50"
+                      : "bg-slate-900 text-white hover:bg-slate-700"
                 }`}
               >
                 {tier.cta}

@@ -15,6 +15,8 @@ export type PricingTier = {
   features: string[];
   cta: string;
   featured: boolean;
+  badge?: string;
+  variant?: "default" | "premium";
 };
 
 export const navLinks = [
@@ -63,44 +65,64 @@ export const steps: StepItem[] = [
 
 export const pricing: PricingTier[] = [
   {
-    name: "Starter",
-    price: "$499/mo",
-    description: "Great for solo founders and small teams.",
-    features: ["Part-time VA support", "Email and calendar help", "Weekly check-ins"],
+    name: "Starter Plan",
+    price: "$1,500/month",
+    description:
+      "For founders and small businesses needing reliable operational support.",
+    features: [
+      "Dedicated Virtual Assistant",
+      "Email and calendar management",
+      "Customer support assistance",
+      "Administrative support",
+      "Weekly reporting",
+      "Slack communication support",
+    ],
     cta: "Get Started",
     featured: false,
   },
   {
-    name: "Growth",
-    price: "$999/mo",
-    description: "Best for growing businesses with daily operations.",
+    name: "Growth Plan",
+    price: "$3,500/month",
+    description:
+      "For growing businesses that require stronger operational support and workflow management.",
     features: [
-      "Dedicated VA support",
-      "Customer support tasks",
-      "Research and reporting",
-      "Priority communication",
+      "2 Dedicated Virtual Assistants",
+      "CRM management",
+      "Lead follow-up",
+      "Customer support",
+      "Operations coordination",
+      "Priority support",
+      "Weekly operations review",
     ],
     cta: "Get Started",
     featured: true,
+    badge: "Most Popular",
   },
   {
-    name: "Scale+",
-    price: "Custom",
-    description: "For teams that need advanced growth support.",
+    name: "Titan Suite",
+    price: "$10,000/month",
+    description:
+      "For businesses seeking a fully managed remote operations and support team.",
     features: [
-      "Multiple team members",
-      "Consulting and process design",
-      "Marketing, branding, and tech support",
+      "4–6 Dedicated Virtual Assistants",
+      "Operations management oversight",
+      "Workflow and operational systems management",
+      "Executive assistance",
+      "Daily operational support",
+      "Workflow optimization",
+      "Weekly strategy calls",
+      "Priority onboarding and support",
     ],
-    cta: "Contact Sales",
+    cta: "Speak With Our Team",
     featured: false,
+    variant: "premium",
   },
 ];
 
 export const reasons = [
   "Fast onboarding",
-  "Affordable pricing",
-  "Skilled and reliable assistants",
+  "Reliable operational execution",
+  "Managed remote teams you can trust",
   "Easy replacement if needed",
-  "Built for growing businesses",
+  "Business support systems that scale",
 ];
