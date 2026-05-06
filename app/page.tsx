@@ -26,13 +26,13 @@ export default function Home() {
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link
               href="/contact"
-              className="rounded-lg bg-slate-900 px-6 py-3 text-center text-sm font-medium text-white transition hover:bg-slate-700"
+              className="rounded-md bg-slate-900 px-6 py-3 text-center text-sm font-medium text-white transition hover:bg-slate-700"
             >
               Book a Free Consultation
             </Link>
             <Link
               href="/pricing"
-              className="rounded-lg border border-slate-200 px-6 py-3 text-center text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:text-slate-900"
+              className="rounded-md border border-slate-200 px-6 py-3 text-center text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:text-slate-900"
             >
               View Pricing
             </Link>

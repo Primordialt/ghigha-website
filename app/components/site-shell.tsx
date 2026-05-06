@@ -25,7 +25,7 @@ export function SiteHeader() {
         <NavLinks />
         <Link
           href="/contact"
-          className="rounded-lg bg-slate-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-slate-700"
+          className="rounded-md bg-slate-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-slate-700"
         >
           Book a Free Call
         </Link>
@@ -49,7 +49,7 @@ export function CtaBanner({ title, body, buttonLabel }: CtaBannerProps) {
           <p className="mx-auto mt-4 max-w-2xl text-slate-200">{body}</p>
           <Link
             href="/contact"
-            className="mt-8 inline-flex rounded-lg bg-white px-6 py-3 text-sm font-medium text-slate-900 transition hover:bg-slate-100"
+            className="mt-8 inline-flex rounded-md bg-white px-6 py-3 text-sm font-medium text-slate-900 transition hover:bg-slate-100"
           >
             {buttonLabel}
           </Link>
