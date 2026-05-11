@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "ghigha.com",
+  "Id": "607f8991-c6f3-4239-9bcf-31f33a5bf34d"
+}
