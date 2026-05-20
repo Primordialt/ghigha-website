@@ -1,10 +1,25 @@
+import { JsonLd } from "../components/json-ld";
 import { CtaBanner, PageHero, SiteShell } from "../components/site-shell";
 import { PricingSection } from "../components/site-sections";
+import { getBreadcrumbSchema, getPrimaryServiceSchema, getWebPageSchema } from "../lib/structured-data";
+import { createPageMetadata } from "../lib/site-metadata";
 import { pricing } from "../lib/site-content";
+
+export const metadata = createPageMetadata({ page: "pricing" });
 
 export default function PricingPage() {
   return (
     <SiteShell>
+      <JsonLd
+        data={[
+          getWebPageSchema("pricing"),
+          getBreadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Pricing", path: "/pricing" },
+          ]),
+          getPrimaryServiceSchema(),
+        ]}
+      />
       <PageHero
         eyebrow="Pricing"
         title="Premium operational support, built to run your business smoothly"

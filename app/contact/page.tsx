@@ -1,8 +1,27 @@
+import { JsonLd } from "../components/json-ld";
 import { PageHero, SiteShell } from "../components/site-shell";
+import {
+  getBreadcrumbSchema,
+  getContactPageSchema,
+  getWebPageSchema,
+} from "../lib/structured-data";
+import { createPageMetadata } from "../lib/site-metadata";
+
+export const metadata = createPageMetadata({ page: "contact" });
 
 export default function ContactPage() {
   return (
     <SiteShell>
+      <JsonLd
+        data={[
+          getWebPageSchema("contact"),
+          getContactPageSchema(),
+          getBreadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Contact", path: "/contact" },
+          ]),
+        ]}
+      />
       <PageHero
         eyebrow="Contact"
         title="Let’s Work Together"
@@ -25,7 +44,11 @@ export default function ContactPage() {
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="rounded-xl bg-slate-50 p-4">
                 <p className="text-xs uppercase tracking-wide text-slate-500">Phone</p>
-                <p className="mt-1 font-medium text-slate-900">+16466318665</p>
+                <p className="mt-1 font-medium text-slate-900">
+                  <a href="tel:+16466318665" className="hover:text-slate-700">
+                    +16466318665
+                  </a>
+                </p>
               </div>
               <div className="rounded-xl bg-slate-50 p-4">
                 <p className="text-xs uppercase tracking-wide text-slate-500">Hours</p>

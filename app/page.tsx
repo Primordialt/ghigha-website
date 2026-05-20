@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { JsonLd } from "./components/json-ld";
 import { CtaBanner, SiteShell } from "./components/site-shell";
 import {
   PricingSection,
@@ -6,17 +7,38 @@ import {
   StepsSection,
   WhyChooseSection,
 } from "./components/site-sections";
+import {
+  getBreadcrumbSchema,
+  getPrimaryServiceSchema,
+  getWebPageSchema,
+} from "./lib/structured-data";
+import { createPageMetadata } from "./lib/site-metadata";
 import { calendlyLink, pricing, reasons, services, steps } from "./lib/site-content";
+
+export const metadata = createPageMetadata({ page: "home" });
 
 export default function Home() {
   return (
     <SiteShell>
-      <section className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
+      <JsonLd
+        data={[
+          getWebPageSchema("home"),
+          getBreadcrumbSchema([{ name: "Home", path: "/" }]),
+          getPrimaryServiceSchema(),
+        ]}
+      />
+      <section
+        aria-labelledby="home-hero-heading"
+        className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-28"
+      >
         <div className="space-y-8">
           <span className="inline-flex rounded-lg border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">
             Business Support & Outsourcing
           </span>
-          <h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+          <h1
+            id="home-hero-heading"
+            className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl"
+          >
             Hire Reliable Virtual Assistants and Operations Support Teams
           </h1>
           <p className="max-w-xl text-lg leading-relaxed text-slate-600">
@@ -40,8 +62,13 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="rounded-3xl border border-slate-100 bg-slate-50 p-8 shadow-sm">
-          <p className="text-sm font-medium text-slate-500">What clients usually get</p>
+        <aside
+          aria-labelledby="home-stats-heading"
+          className="rounded-3xl border border-slate-100 bg-slate-50 p-8 shadow-sm"
+        >
+          <p id="home-stats-heading" className="text-sm font-medium text-slate-500">
+            What clients usually get
+          </p>
           <div className="mt-8 grid grid-cols-2 gap-6">
             <div>
               <p className="text-3xl font-semibold">10+ hrs</p>
@@ -60,7 +87,7 @@ export default function Home() {
               <p className="mt-1 text-sm text-slate-600">On growth work</p>
             </div>
           </div>
-        </div>
+        </aside>
       </section>
 
       <ServicesSection

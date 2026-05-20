@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { calendlyLink } from "../lib/site-content";
 import { NavLinks } from "./nav-links";
+import { SiteLogo } from "./site-logo";
 
 type SiteShellProps = {
   children: React.ReactNode;
@@ -10,7 +11,7 @@ export function SiteShell({ children }: SiteShellProps) {
   return (
     <div className="min-h-screen bg-white text-slate-900">
       <SiteHeader />
-      <main>{children}</main>
+      <main id="main-content">{children}</main>
       <SiteFooter />
     </div>
   );
@@ -19,10 +20,11 @@ export function SiteShell({ children }: SiteShellProps) {
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-20 border-b border-slate-100 bg-white/95 backdrop-blur">
-      <nav className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
-        <Link href="/" className="text-xl font-semibold tracking-tight">
-          Ghigha
-        </Link>
+      <nav
+        aria-label="Main navigation"
+        className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 py-4 lg:px-8"
+      >
+        <SiteLogo />
         <NavLinks />
         <Link
           href={calendlyLink}
@@ -72,11 +74,17 @@ type PageHeroProps = {
 
 export function PageHero({ eyebrow, title, description }: PageHeroProps) {
   return (
-    <section className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8 lg:py-24">
+    <section
+      aria-labelledby="page-hero-heading"
+      className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-8 lg:py-24"
+    >
       <span className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">
         {eyebrow}
       </span>
-      <h1 className="mt-6 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+      <h1
+        id="page-hero-heading"
+        className="mt-6 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl"
+      >
         {title}
       </h1>
       <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
@@ -88,7 +96,10 @@ export function PageHero({ eyebrow, title, description }: PageHeroProps) {
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-slate-100 py-8">
+    <footer
+      aria-label="Site footer"
+      className="border-t border-slate-100 py-8"
+    >
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-3 px-6 text-sm text-slate-500 sm:flex-row lg:px-8">
         <p>© {new Date().getFullYear()} Ghigha. All rights reserved.</p>
         <div className="flex gap-4">

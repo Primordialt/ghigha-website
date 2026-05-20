@@ -1,10 +1,24 @@
+import { JsonLd } from "../components/json-ld";
 import { CtaBanner, PageHero, SiteShell } from "../components/site-shell";
 import { WhyChooseSection } from "../components/site-sections";
+import { getBreadcrumbSchema, getWebPageSchema } from "../lib/structured-data";
+import { createPageMetadata } from "../lib/site-metadata";
 import { reasons } from "../lib/site-content";
+
+export const metadata = createPageMetadata({ page: "about" });
 
 export default function AboutPage() {
   return (
     <SiteShell>
+      <JsonLd
+        data={[
+          getWebPageSchema("about"),
+          getBreadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about" },
+          ]),
+        ]}
+      />
       <PageHero
         eyebrow="About"
         title="Built for Business Owners Who Want to Scale"
