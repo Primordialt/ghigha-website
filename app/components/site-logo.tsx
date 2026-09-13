@@ -10,7 +10,7 @@ export function SiteLogo() {
       {/* Native img preserves Qurova DEMO letterforms (outlined as paths in the SVG). */}
       <img
         src="/images/logo-mobile.svg"
-        alt="Ghigha — Virtual Assistant Services"
+        alt="Ghigha — Business Operations Support"
         width={120}
         height={32}
         loading="eager"
@@ -20,7 +20,7 @@ export function SiteLogo() {
       />
       <img
         src="/images/logo-desktop.svg"
-        alt="Ghigha — Virtual Assistant Services"
+        alt="Ghigha — Business Operations Support"
         width={160}
         height={40}
         loading="eager"

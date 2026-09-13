@@ -1,6 +1,7 @@
 export type ServiceItem = {
   title: string;
   description: string;
+  highlights?: string[];
 };
 
 export type StepItem = {
@@ -10,6 +11,7 @@ export type StepItem = {
 
 export type PricingTier = {
   name: string;
+  subtitle?: string;
   price: string;
   description: string;
   features: string[];
@@ -20,10 +22,16 @@ export type PricingTier = {
   paymentLink?: string;
 };
 
+export type DifferenceItem = {
+  title: string;
+  description: string;
+};
+
 export const calendlyLink = "https://calendly.com/elliott-primordialt/30min";
 
 export const navLinks = [
-  { href: "/services", label: "Services" },
+  { href: "/services", label: "Solutions" },
+  { href: "/#how-ghigha-works", label: "How It Works" },
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
@@ -31,104 +39,170 @@ export const navLinks = [
 
 export const services: ServiceItem[] = [
   {
-    title: "Virtual Assistants",
+    title: "Executive & Administrative Operations",
     description:
-      "Skilled assistants for admin, customer support, and daily operations.",
+      "We take recurring coordination work off your team's plate so leadership can stay focused on decisions, clients, and growth.",
+    highlights: [
+      "Calendar and scheduling coordination",
+      "Inbox and communication management",
+      "Documentation and research",
+      "Meeting coordination",
+      "Administrative workflows",
+      "Executive assistance",
+    ],
   },
   {
-    title: "Business Consulting",
-    description: "We help you structure your operations and scale with confidence.",
-  },
-  {
-    title: "Marketing & Branding",
+    title: "Customer Communication",
     description:
-      "We position your brand to attract the right customers and convert more leads.",
+      "We help businesses maintain responsive, consistent customer communication without forcing leadership to manage every interaction.",
+    highlights: [
+      "Customer inquiries",
+      "Email communication",
+      "Follow-ups",
+      "Appointment coordination",
+      "Customer support workflows",
+      "CRM updates",
+    ],
   },
   {
-    title: "Web & App Development",
-    description: "We build modern tools and systems that support your growth.",
+    title: "Workflow & Process Coordination",
+    description:
+      "We keep recurring business processes moving so opportunities and handoffs don't stall in operational gaps.",
+    highlights: [
+      "Task coordination",
+      "Process execution",
+      "Workflow management",
+      "CRM administration",
+      "Reporting",
+      "Follow-up systems",
+      "Internal coordination",
+    ],
+  },
+  {
+    title: "Growth Operations Support",
+    description:
+      "We provide operational capacity around revenue-generating work so your team can pursue growth without losing execution quality.",
+    highlights: [
+      "Lead follow-up",
+      "Pipeline administration",
+      "Client onboarding coordination",
+      "Appointment scheduling",
+      "Sales administration",
+      "Reporting and tracking",
+    ],
   },
 ];
 
 export const steps: StepItem[] = [
   {
-    title: "Tell us what you need",
+    title: "Assess",
     description:
-      "We understand your business and identify the tasks you want to delegate.",
+      "Understand where your business is losing operational capacity. We learn how your team works, identify recurring bottlenecks, and determine where additional support can create the greatest impact.",
   },
   {
-    title: "We match you with a VA",
-    description: "We assign a trained assistant that fits your exact needs.",
+    title: "Build",
+    description:
+      "Design the right support structure around your workflows. We identify the responsibilities, processes, and support resources required for your business.",
   },
   {
-    title: "Start working in days",
-    description: "You begin working with your assistant quickly and efficiently.",
+    title: "Operate",
+    description:
+      "We take ownership of the agreed operational responsibilities. Your Ghigha support team executes recurring workflows while maintaining communication, structure, and accountability.",
+  },
+  {
+    title: "Improve",
+    description:
+      "Your support structure evolves as your business grows. We continuously identify opportunities to improve workflows, reduce friction, and increase operational efficiency.",
   },
 ];
 
 export const pricing: PricingTier[] = [
   {
-    name: "Starter Plan",
+    name: "Starter",
+    subtitle: "Operational Support",
     price: "$1,500/month",
     description:
-      "For founders and small businesses needing reliable operational support.",
+      "For businesses that need dependable operational capacity without adding another full-time hire.",
     features: [
-      "Dedicated Virtual Assistant",
-      "Email and calendar management",
-      "Customer support assistance",
-      "Administrative support",
+      "Administrative coordination",
+      "Executive support",
+      "Scheduling",
+      "Customer communication",
+      "CRM and workflow support",
+      "Recurring operational tasks",
       "Weekly reporting",
-      "Slack communication support",
     ],
-    cta: "Get Started",
+    cta: "Explore Starter",
     featured: false,
     paymentLink: "https://buy.stripe.com/bJe9AU2KC1TQenAeQD5Vu08",
   },
   {
-    name: "Growth Plan",
+    name: "Growth",
+    subtitle: "Growth Operations",
     price: "$3,500/month",
     description:
-      "For growing businesses that require stronger operational support and workflow management.",
+      "For growing businesses managing increasing operational complexity.",
     features: [
-      "2 Dedicated Virtual Assistants",
-      "CRM management",
+      "Multi-function operational support",
+      "Workflow coordination",
+      "Customer communication",
+      "CRM and pipeline administration",
       "Lead follow-up",
-      "Customer support",
-      "Operations coordination",
-      "Priority support",
-      "Weekly operations review",
+      "Client onboarding support",
+      "Operational reporting",
     ],
-    cta: "Get Started",
+    cta: "Explore Growth",
     featured: true,
-    badge: "Most Popular",
+    badge: "Most Suitable for Growing Teams",
     paymentLink: "https://buy.stripe.com/28E8wQdpgfKG4N05g35Vu09",
   },
   {
-    name: "Titan Suite",
+    name: "Titan",
+    subtitle: "Managed Operations",
     price: "$10,000/month",
     description:
-      "For businesses seeking a fully managed remote operations and support team.",
+      "For businesses that need a broader operational support infrastructure.",
     features: [
-      "4–6 Dedicated Virtual Assistants",
-      "Operations management oversight",
-      "Workflow and operational systems management",
+      "Dedicated operational team",
+      "Operations coordination",
       "Executive assistance",
+      "Workflow management",
+      "Customer communication",
+      "Process execution",
       "Daily operational support",
-      "Workflow optimization",
-      "Weekly strategy calls",
-      "Priority onboarding and support",
+      "Management oversight",
     ],
-    cta: "Speak With Our Team",
+    cta: "Discuss Your Operations",
     featured: false,
     variant: "premium",
     paymentLink: calendlyLink,
   },
 ];
 
-export const reasons = [
-  "Fast onboarding",
-  "Reliable operational execution",
-  "Managed remote teams you can trust",
-  "Easy replacement if needed",
-  "Business support systems that scale",
+export const differenceItems: DifferenceItem[] = [
+  {
+    title: "Reliability",
+    description:
+      "Consistent execution with clear responsibilities and accountability.",
+  },
+  {
+    title: "Structure",
+    description:
+      "Defined workflows and processes instead of ad-hoc task delegation.",
+  },
+  {
+    title: "Responsiveness",
+    description:
+      "Keep customers, teams, and business processes moving without unnecessary delays.",
+  },
+  {
+    title: "Scalability",
+    description:
+      "Expand operational capacity as your business grows without rebuilding your entire internal team.",
+  },
 ];
+
+/** @deprecated Prefer differenceItems for the new positioning. */
+export const reasons = differenceItems.map(
+  (item) => `${item.title}: ${item.description}`,
+);

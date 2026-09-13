@@ -110,11 +110,11 @@ export function getPrimaryServiceSchema(): JsonLd {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": `${siteConfig.url}/services#virtual-assistant-services`,
-    name: "Virtual Assistant Services",
+    "@id": `${siteConfig.url}/services#business-operations-support`,
+    name: "Business Operations Support",
     description:
-      "Dedicated virtual assistant services including executive assistance, administrative support, operations support, and remote assistant services for startups and growing businesses.",
-    serviceType: "Virtual Assistant Services",
+      "Structured business operations support including executive and administrative operations, customer communication, workflow coordination, and growth operations support for growing businesses.",
+    serviceType: "Business Operations Support",
     provider: {
       "@id": `${siteConfig.url}/#organization`,
     },
@@ -122,7 +122,7 @@ export function getPrimaryServiceSchema(): JsonLd {
     url: absoluteUrl("/services"),
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Ghigha Service Plans",
+      name: "Ghigha Operations Support Plans",
       itemListElement: pricing.map((tier) => ({
         "@type": "Offer",
         name: tier.name,

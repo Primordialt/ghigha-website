@@ -2,10 +2,12 @@ import Link from "next/link";
 import { JsonLd } from "./components/json-ld";
 import { CtaBanner, SiteShell } from "./components/site-shell";
 import {
+  BuiltAroundSection,
+  DifferenceSection,
+  PeopleProcessSection,
   PricingSection,
   ServicesSection,
   StepsSection,
-  WhyChooseSection,
 } from "./components/site-sections";
 import {
   getBreadcrumbSchema,
@@ -13,7 +15,13 @@ import {
   getWebPageSchema,
 } from "./lib/structured-data";
 import { createPageMetadata } from "./lib/site-metadata";
-import { calendlyLink, pricing, reasons, services, steps } from "./lib/site-content";
+import {
+  calendlyLink,
+  differenceItems,
+  pricing,
+  services,
+  steps,
+} from "./lib/site-content";
 
 export const metadata = createPageMetadata({ page: "home" });
 
@@ -32,19 +40,26 @@ export default function Home() {
         className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-28"
       >
         <div className="space-y-8">
-          <span className="inline-flex rounded-lg border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">
-            Business Support & Outsourcing
+          <span className="inline-flex rounded-lg border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium uppercase tracking-wide text-slate-700">
+            Business Operations Support
           </span>
           <h1
             id="home-hero-heading"
             className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl"
           >
-            Hire Reliable Virtual Assistants and Operations Support Teams
+            Operational Capacity for Growing Businesses
           </h1>
-          <p className="max-w-xl text-lg leading-relaxed text-slate-600">
-            We help businesses streamline operations with dedicated virtual assistants and
-            managed support systems.
-          </p>
+          <div className="max-w-xl space-y-4 text-lg leading-relaxed text-slate-600">
+            <p>
+              We help growing businesses remove operational bottlenecks without
+              the cost and complexity of building another internal team.
+            </p>
+            <p>
+              From executive coordination and customer communication to workflow
+              execution and administrative operations, Ghigha provides the people
+              and structure needed to keep your business moving.
+            </p>
+          </div>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link
               href={calendlyLink}
@@ -52,58 +67,59 @@ export default function Home() {
               rel="noopener noreferrer"
               className="rounded-md bg-slate-900 px-6 py-3 text-center text-sm font-medium text-white transition hover:bg-slate-700"
             >
-              Book a Free Consultation
+              Identify Your Operational Bottlenecks
             </Link>
             <Link
-              href="/pricing"
+              href="#how-ghigha-works"
               className="rounded-md border border-slate-200 px-6 py-3 text-center text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:text-slate-900"
             >
-              View Pricing
+              See How Ghigha Works
             </Link>
           </div>
         </div>
         <aside
-          aria-labelledby="home-stats-heading"
-          className="rounded-3xl border border-slate-100 bg-slate-50 p-8 shadow-sm"
+          aria-labelledby="home-support-heading"
+          className="flex flex-col justify-center rounded-3xl border border-slate-100 bg-slate-50 p-8 shadow-sm"
         >
-          <p id="home-stats-heading" className="text-sm font-medium text-slate-500">
-            What clients usually get
+          <p
+            id="home-support-heading"
+            className="text-2xl font-semibold tracking-tight text-slate-900"
+          >
+            People + Process + Technology
           </p>
-          <div className="mt-8 grid grid-cols-2 gap-6">
-            <div>
-              <p className="text-3xl font-semibold">10+ hrs</p>
-              <p className="mt-1 text-sm text-slate-600">Saved every week</p>
-            </div>
-            <div>
-              <p className="text-3xl font-semibold">Faster</p>
-              <p className="mt-1 text-sm text-slate-600">Response times</p>
-            </div>
-            <div>
-              <p className="text-3xl font-semibold">Less stress</p>
-              <p className="mt-1 text-sm text-slate-600">For founders & teams</p>
-            </div>
-            <div>
-              <p className="text-3xl font-semibold">More focus</p>
-              <p className="mt-1 text-sm text-slate-600">On growth work</p>
-            </div>
-          </div>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">
+            A structured support layer designed around the way your business
+            actually operates.
+          </p>
         </aside>
       </section>
 
       <ServicesSection
-        description="We help business owners free up their time and run their operations smoothly."
+        title="What We Do"
+        description="Business operations support that creates capacity where growing teams feel the most friction."
         items={services}
       />
-      <StepsSection items={steps} />
-      <PricingSection description="Clear, flexible plans based on your current stage." tiers={pricing} />
-      <WhyChooseSection
-        description="We are built for busy business owners who want to delegate with peace of mind and keep moving forward."
-        reasons={reasons}
+      <StepsSection
+        id="how-ghigha-works"
+        title="How Ghigha Works"
+        description="We don’t simply assign tasks. We build and operate the support structure your business needs."
+        items={steps}
       />
+      <DifferenceSection
+        description="Ghigha is designed for businesses that have outgrown doing everything themselves but aren't ready to build another large internal team. We combine capable people, structured processes, and technology-assisted workflows to create a dependable operational layer around your business."
+        items={differenceItems}
+      />
+      <PeopleProcessSection />
+      <PricingSection
+        description="Choose the level of operational capacity your business needs — not a headcount of assistants."
+        tiers={pricing}
+      />
+      <BuiltAroundSection />
       <CtaBanner
-        title="Stop Doing Everything Yourself"
-        body="Let us handle the daily work so you can focus on growing your business."
-        buttonLabel="Book a Free Consultation"
+        title="What's Slowing Your Business Down?"
+        body={`You may not need another employee.\n\nYou may simply need the right operational responsibilities taken off your team's plate.\n\nLet's identify where your business is losing time, capacity, or consistency and determine whether Ghigha can help.`}
+        buttonLabel="Book an Operational Growth Consultation"
+        note="30 minutes · No pressure · Practical conversation"
       />
     </SiteShell>
   );

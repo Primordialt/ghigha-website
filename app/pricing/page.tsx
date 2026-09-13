@@ -1,7 +1,14 @@
 import { JsonLd } from "../components/json-ld";
 import { CtaBanner, PageHero, SiteShell } from "../components/site-shell";
-import { PricingSection } from "../components/site-sections";
-import { getBreadcrumbSchema, getPrimaryServiceSchema, getWebPageSchema } from "../lib/structured-data";
+import {
+  BuiltAroundSection,
+  PricingSection,
+} from "../components/site-sections";
+import {
+  getBreadcrumbSchema,
+  getPrimaryServiceSchema,
+  getWebPageSchema,
+} from "../lib/structured-data";
 import { createPageMetadata } from "../lib/site-metadata";
 import { pricing } from "../lib/site-content";
 
@@ -22,17 +29,19 @@ export default function PricingPage() {
       />
       <PageHero
         eyebrow="Pricing"
-        title="Premium operational support, built to run your business smoothly"
-        description="Choose the level of operational support you need today — from a dedicated assistant to a fully managed remote operations team."
+        title="Operational Capacity, Matched to Your Stage"
+        description="Each package is built around the operational support your business needs — not the number of people assigned."
       />
       <PricingSection
-        description="High-value support focused on operational efficiency, systems, and reliable execution."
+        description="Transparent monthly plans for structured business operations support."
         tiers={pricing}
       />
+      <BuiltAroundSection />
       <CtaBanner
-        title="Not sure which plan to choose?"
-        body="Book a free consultation and we will recommend the right setup for your goals."
-        buttonLabel="Book a Free Consultation"
+        title="Not Sure Which Level of Support You Need?"
+        body="Book an Operational Growth Consultation. We'll identify where capacity is leaking and recommend the right fit — without overselling."
+        buttonLabel="Book an Operational Growth Consultation"
+        note="30 minutes · No pressure · Practical conversation"
       />
     </SiteShell>
   );

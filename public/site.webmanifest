@@ -1,7 +1,7 @@
 {
-  "name": "Ghigha — Virtual Assistant Services & Business Support",
+  "name": "Ghigha — Business Operations Support",
   "short_name": "Ghigha",
-  "description": "Hire virtual assistants with Ghigha. Remote assistant services, business support services, operations support, executive assistance, and startup support.",
+  "description": "Ghigha helps growing businesses remove operational bottlenecks with structured business operations, executive support, customer communication, and workflow coordination.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

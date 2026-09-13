@@ -10,7 +10,10 @@ export function NavLinks() {
   return (
     <ul className="hidden items-center gap-6 text-sm md:flex">
       {navLinks.map((link) => {
-        const isActive = pathname === link.href;
+        const linkPath = link.href.split("#")[0] || "/";
+        const isActive =
+          linkPath !== "/" &&
+          (pathname === linkPath || pathname.startsWith(`${linkPath}/`));
 
         return (
           <li key={link.href}>

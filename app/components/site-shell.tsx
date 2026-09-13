@@ -30,9 +30,9 @@ export function SiteHeader() {
           href={calendlyLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-md bg-slate-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-slate-700"
+          className="rounded-md bg-slate-900 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-slate-700 sm:px-5"
         >
-          Book a Free Call
+          Book a Consultation
         </Link>
       </nav>
     </header>
@@ -43,15 +43,18 @@ type CtaBannerProps = {
   title: string;
   body: string;
   buttonLabel: string;
+  note?: string;
 };
 
-export function CtaBanner({ title, body, buttonLabel }: CtaBannerProps) {
+export function CtaBanner({ title, body, buttonLabel, note }: CtaBannerProps) {
   return (
     <section className="py-20">
       <div className="mx-auto w-full max-w-4xl px-6 lg:px-8">
         <div className="rounded-3xl bg-slate-900 px-8 py-14 text-center text-white">
           <h2 className="text-3xl font-semibold tracking-tight">{title}</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-slate-200">{body}</p>
+          <p className="mx-auto mt-4 max-w-2xl whitespace-pre-line text-slate-200">
+            {body}
+          </p>
           <Link
             href={calendlyLink}
             target="_blank"
@@ -60,6 +63,9 @@ export function CtaBanner({ title, body, buttonLabel }: CtaBannerProps) {
           >
             {buttonLabel}
           </Link>
+          {note ? (
+            <p className="mt-4 text-sm text-slate-400">{note}</p>
+          ) : null}
         </div>
       </div>
     </section>

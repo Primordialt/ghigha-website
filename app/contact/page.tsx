@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { JsonLd } from "../components/json-ld";
 import { PageHero, SiteShell } from "../components/site-shell";
 import {
@@ -6,6 +7,7 @@ import {
   getWebPageSchema,
 } from "../lib/structured-data";
 import { createPageMetadata } from "../lib/site-metadata";
+import { calendlyLink } from "../lib/site-content";
 
 export const metadata = createPageMetadata({ page: "contact" });
 
@@ -24,26 +26,42 @@ export default function ContactPage() {
       />
       <PageHero
         eyebrow="Contact"
-        title="Let’s Work Together"
-        description="Have questions or ready to get started? Send us a message and we will get back to you shortly."
+        title="Start With an Operational Growth Consultation"
+        description="A 30-minute conversation to understand your current operations, identify recurring bottlenecks, and determine whether additional operational support could create meaningful capacity for your business."
       />
       <section className="border-t border-slate-100 py-20">
         <div className="mx-auto w-full max-w-3xl px-6 lg:px-8">
           <div className="rounded-2xl border border-slate-100 p-8">
-            <h2 className="text-2xl font-semibold tracking-tight">Reach Us Instantly</h2>
+            <h2 className="text-2xl font-semibold tracking-tight">
+              Reach Us Directly
+            </h2>
             <p className="mt-3 text-slate-600">
-              Email us at{" "}
+              Email{" "}
               <a
                 href="mailto:hello@ghigha.com"
                 className="font-medium text-slate-900 underline underline-offset-4"
               >
                 hello@ghigha.com
               </a>{" "}
-              and we will set up a quick consultation.
+              or book a consultation. No high-pressure sales pitch. If Ghigha
+              isn&apos;t the right fit, we&apos;ll tell you.
+            </p>
+            <Link
+              href={calendlyLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex rounded-md bg-slate-900 px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-700"
+            >
+              Book an Operational Growth Consultation
+            </Link>
+            <p className="mt-3 text-sm text-slate-500">
+              30 minutes · No pressure · Practical conversation
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="rounded-xl bg-slate-50 p-4">
-                <p className="text-xs uppercase tracking-wide text-slate-500">Phone</p>
+                <p className="text-xs uppercase tracking-wide text-slate-500">
+                  Phone
+                </p>
                 <p className="mt-1 font-medium text-slate-900">
                   <a href="tel:+16466318665" className="hover:text-slate-700">
                     +16466318665
@@ -51,8 +69,12 @@ export default function ContactPage() {
                 </p>
               </div>
               <div className="rounded-xl bg-slate-50 p-4">
-                <p className="text-xs uppercase tracking-wide text-slate-500">Hours</p>
-                <p className="mt-1 font-medium text-slate-900">Mon - Fri, 9am - 6pm</p>
+                <p className="text-xs uppercase tracking-wide text-slate-500">
+                  Hours
+                </p>
+                <p className="mt-1 font-medium text-slate-900">
+                  Mon - Fri, 9am - 6pm
+                </p>
               </div>
             </div>
           </div>

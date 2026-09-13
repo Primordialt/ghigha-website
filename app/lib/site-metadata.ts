@@ -1,27 +1,29 @@
 import type { Metadata } from "next";
 
 export const seoKeywords = [
-  "Virtual Assistant Services",
-  "Hire Virtual Assistants",
-  "Remote Assistant Services",
-  "Business Support Services",
-  "Operations Support",
-  "Startup Support",
-  "Executive Assistance",
-  "Administrative Support",
+  "business operations support",
+  "operations support services",
+  "operational support for small businesses",
+  "operations support for growing businesses",
+  "executive operations support",
+  "administrative operations support",
+  "managed operations support",
+  "virtual operations support",
+  "business operations partner",
+  "workflow coordination",
 ] as const;
 
 export const siteConfig = {
   name: "Ghigha",
   url: "https://ghigha.com",
   defaultTitle:
-    "Ghigha | Hire Virtual Assistants & Remote Assistant Services",
+    "Ghigha | Business Operations Support for Growing Businesses",
   description:
-    "Ghigha provides premium virtual assistant services, remote assistant services, and business support services for startups and growing companies. Hire virtual assistants for operations support, executive assistance, and administrative support.",
+    "Ghigha helps growing businesses remove operational bottlenecks with structured business operations, executive support, customer communication, and workflow coordination.",
   keywords: [...seoKeywords],
   ogImage: "/og-image.png",
   ogImageAlt:
-    "Ghigha — Virtual Assistant Services, Business Support & Operations Support",
+    "Ghigha — Business Operations Support for Growing Businesses",
   themeColor: "#05071C",
   locale: "en_US",
   email: "hello@ghigha.com",
@@ -38,34 +40,34 @@ export const pageSeo: Record<
   home: {
     title: {
       absolute:
-        "Ghigha | Hire Virtual Assistants & Remote Assistant Services",
+        "Ghigha | Business Operations Support for Growing Businesses",
     },
     description:
-      "Hire reliable virtual assistants and remote assistant services from Ghigha. Business support services, operations support, executive assistance, and startup support for growing teams.",
+      "Ghigha helps growing businesses remove operational bottlenecks with structured business operations, executive support, customer communication, and workflow coordination.",
     path: "/",
   },
   services: {
-    title: "Virtual Assistant Services",
+    title: "Operations Support Solutions",
     description:
-      "Explore Ghigha's virtual assistant services — remote assistant services, executive assistance, administrative support, and operations support tailored for startups and business owners.",
+      "Explore Ghigha's business operations support — executive and administrative operations, customer communication, workflow coordination, and growth operations support.",
     path: "/services",
   },
   pricing: {
     title: "Pricing",
     description:
-      "Flexible pricing for virtual assistant services and business support services. Hire virtual assistants with plans for operations support, executive assistance, and startup support.",
+      "Operational capacity plans for growing businesses. Choose Starter, Growth, or Titan managed operations support based on the structure your business needs.",
     path: "/pricing",
   },
   about: {
     title: "About",
     description:
-      "Learn how Ghigha helps founders scale with virtual assistant services, remote assistant services, startup support, and reliable operations support teams.",
+      "Learn how Ghigha helps growing businesses operate with more capacity, structure, and consistency through people, process, and technology-assisted support.",
     path: "/about",
   },
   contact: {
     title: "Contact",
     description:
-      "Contact Ghigha to hire virtual assistants or discuss remote assistant services, business support services, and operations support for your business.",
+      "Book an Operational Growth Consultation with Ghigha to identify bottlenecks and determine the right level of business operations support.",
     path: "/contact",
   },
 };
