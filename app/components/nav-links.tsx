@@ -8,7 +8,7 @@ export function NavLinks() {
   const pathname = usePathname();
 
   return (
-    <ul className="hidden items-center gap-6 text-sm md:flex">
+    <ul className="hidden items-center gap-3 text-sm font-medium md:flex lg:gap-6">
       {navLinks.map((link) => {
         const linkPath = link.href.split("#")[0] || "/";
         const isActive =
@@ -22,7 +22,7 @@ export function NavLinks() {
               aria-current={isActive ? "page" : undefined}
               className={
                 isActive
-                  ? "font-medium text-slate-900"
+                  ? "font-semibold text-slate-900"
                   : "text-slate-600 transition hover:text-slate-900"
               }
             >
