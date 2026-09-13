@@ -51,13 +51,12 @@ export default function Home() {
           </h1>
           <div className="max-w-xl space-y-4 text-base leading-relaxed text-slate-600 sm:text-lg">
             <p>
-              We help growing businesses remove operational bottlenecks without
-              the cost and complexity of building another internal team.
+              We help companies clear operational bottlenecks by adding the
+              people and structure needed to keep work moving.
             </p>
             <p>
-              From executive coordination and customer communication to workflow
-              execution and administrative operations, Ghigha provides the people
-              and structure needed to keep your business moving.
+              That includes executive coordination, customer communication,
+              workflow execution, and day-to-day administrative operations.
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row sm:items-stretch">
@@ -85,39 +84,38 @@ export default function Home() {
             id="home-support-heading"
             className="text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl"
           >
-            People + Process + Technology
+            People, Process, and Technology
           </p>
           <p className="mt-4 text-base leading-relaxed text-slate-600">
-            A structured support layer designed around the way your business
-            actually operates.
+            Support designed around the way your business already works.
           </p>
         </aside>
       </section>
 
       <ServicesSection
-        title="What We Do"
-        description="Business operations support that creates capacity where growing teams feel the most friction."
+        title="Where We Can Take Work Off Your Team's Plate"
+        description="Practical support for the recurring work that keeps a business running."
         items={services}
       />
       <StepsSection
         id="how-ghigha-works"
-        title="How Ghigha Works"
-        description="We don't simply assign tasks. We build and operate the support structure your business needs."
+        title="How We Work With Your Team"
+        description="We start with your workflows, then put the right coverage in place and keep improving it."
         items={steps}
       />
       <DifferenceSection
-        description="Ghigha is designed for businesses that have outgrown doing everything themselves but aren't ready to build another large internal team. We combine capable people, structured processes, and technology-assisted workflows to create a dependable operational layer around your business."
+        description="Ghigha works with companies that have outgrown doing everything in-house, and want dependable help with the work that keeps the business running. We bring capable people, clear processes, and practical tools into one support layer."
         items={differenceItems}
       />
       <PeopleProcessSection />
       <PricingSection
-        description="Choose the level of operational capacity your business needs."
+        description="Choose the level of coverage that fits your current stage."
         tiers={pricing}
       />
       <BuiltAroundSection />
       <CtaBanner
         title="What's Slowing Your Business Down?"
-        body="You may not need another employee. You may simply need the right operational responsibilities taken off your team's plate. Let's identify where your business is losing time, capacity, or consistency — and determine whether Ghigha can help."
+        body="If recurring work is eating into leadership time, let's walk through where capacity is getting lost and whether Ghigha can help."
         buttonLabel="Book an Operational Growth Consultation"
       />
     </SiteShell>

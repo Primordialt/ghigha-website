@@ -29,19 +29,18 @@ export default function PricingPage() {
       />
       <PageHero
         eyebrow="Pricing"
-        title="Operational Capacity, Matched to Your Stage"
-        description="Each package is built around the operational support your business needs — not the number of people assigned."
+        title="Coverage Matched to Your Stage"
+        description="Each package gives your business the right level of operational support for its current stage of growth."
       />
       <PricingSection
-        description="Transparent monthly plans for structured business operations support."
+        description="Clear monthly plans for structured operations support."
         tiers={pricing}
       />
       <BuiltAroundSection />
       <CtaBanner
-        title="Not Sure Which Level of Support You Need?"
-        body="Book an Operational Growth Consultation. We'll identify where capacity is leaking and recommend the right fit — without overselling."
+        title="Unsure Which Plan Fits?"
+        body="Book an Operational Growth Consultation. We'll review where capacity is getting lost and recommend the coverage that makes sense."
         buttonLabel="Book an Operational Growth Consultation"
-        note="30 minutes · No pressure · Practical conversation"
       />
     </SiteShell>
   );

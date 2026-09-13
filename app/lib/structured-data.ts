@@ -113,7 +113,7 @@ export function getPrimaryServiceSchema(): JsonLd {
     "@id": `${siteConfig.url}/services#business-operations-support`,
     name: "Business Operations Support",
     description:
-      "Structured business operations support including executive and administrative operations, customer communication, workflow coordination, and growth operations support for growing businesses.",
+      "Business operations support covering executive and administrative operations, customer communication, workflow coordination, and growth-related day-to-day work.",
     serviceType: "Business Operations Support",
     provider: {
       "@id": `${siteConfig.url}/#organization`,

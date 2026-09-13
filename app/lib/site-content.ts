@@ -41,7 +41,7 @@ export const services: ServiceItem[] = [
   {
     title: "Executive & Administrative Operations",
     description:
-      "We take recurring coordination work off your team's plate so leadership can stay focused on decisions, clients, and growth.",
+      "We handle the recurring coordination work that pulls leadership into the weeds, so your team can stay focused on decisions, clients, and growth.",
     highlights: [
       "Calendar and scheduling coordination",
       "Inbox and communication management",
@@ -54,7 +54,7 @@ export const services: ServiceItem[] = [
   {
     title: "Customer Communication",
     description:
-      "We help businesses maintain responsive, consistent customer communication without forcing leadership to manage every interaction.",
+      "We keep customer conversations moving with clear responses, follow-ups, and updates, so your team can stay focused on higher-priority work.",
     highlights: [
       "Customer inquiries",
       "Email communication",
@@ -67,7 +67,7 @@ export const services: ServiceItem[] = [
   {
     title: "Workflow & Process Coordination",
     description:
-      "We keep recurring business processes moving so opportunities and handoffs don't stall in operational gaps.",
+      "We keep recurring processes on track so handoffs, follow-ups, and updates stay organized.",
     highlights: [
       "Task coordination",
       "Process execution",
@@ -81,7 +81,7 @@ export const services: ServiceItem[] = [
   {
     title: "Growth Operations Support",
     description:
-      "We provide operational capacity around revenue-generating work so your team can pursue growth without losing execution quality.",
+      "We support the day-to-day work around sales and client delivery so revenue activity keeps moving as volume increases.",
     highlights: [
       "Lead follow-up",
       "Pipeline administration",
@@ -97,22 +97,22 @@ export const steps: StepItem[] = [
   {
     title: "Assess",
     description:
-      "Understand where your business is losing operational capacity. We learn how your team works, identify recurring bottlenecks, and determine where additional support can create the greatest impact.",
+      "We learn how your team works today, where time gets lost, and which recurring responsibilities would create the most relief if handled well.",
   },
   {
     title: "Build",
     description:
-      "Design the right support structure around your workflows. We identify the responsibilities, processes, and support resources required for your business.",
+      "We map the responsibilities, workflows, and support coverage that fit your business, then set clear ownership before work begins.",
   },
   {
     title: "Operate",
     description:
-      "We take ownership of the agreed operational responsibilities. Your Ghigha support team executes recurring workflows while maintaining communication, structure, and accountability.",
+      "Your Ghigha team runs the agreed work with clear communication, documented processes, and steady follow-through.",
   },
   {
     title: "Improve",
     description:
-      "Your support structure evolves as your business grows. We continuously identify opportunities to improve workflows, reduce friction, and increase operational efficiency.",
+      "As your workload changes, we refine workflows and coverage so support stays useful and efficient over time.",
   },
 ];
 
@@ -122,7 +122,7 @@ export const pricing: PricingTier[] = [
     subtitle: "Operational Support",
     price: "$1,500/month",
     description:
-      "For businesses that need dependable operational capacity without adding another full-time hire.",
+      "Steady coverage for founders and small teams that need reliable help with day-to-day operations.",
     features: [
       "Administrative coordination",
       "Executive support",
@@ -141,7 +141,7 @@ export const pricing: PricingTier[] = [
     subtitle: "Growth Operations",
     price: "$3,500/month",
     description:
-      "For growing businesses managing increasing operational complexity.",
+      "Broader coverage for teams managing more customers, follow-ups, and moving parts each week.",
     features: [
       "Multi-function operational support",
       "Workflow coordination",
@@ -153,7 +153,7 @@ export const pricing: PricingTier[] = [
     ],
     cta: "Explore Growth",
     featured: true,
-    badge: "Most Suitable for Growing Teams",
+    badge: "Best fit for expanding teams",
     paymentLink: "https://buy.stripe.com/28E8wQdpgfKG4N05g35Vu09",
   },
   {
@@ -161,7 +161,7 @@ export const pricing: PricingTier[] = [
     subtitle: "Managed Operations",
     price: "$10,000/month",
     description:
-      "For businesses that need a broader operational support infrastructure.",
+      "A dedicated operations team for companies that need wider coverage and closer day-to-day coordination.",
     features: [
       "Dedicated operational team",
       "Operations coordination",
@@ -183,22 +183,22 @@ export const differenceItems: DifferenceItem[] = [
   {
     title: "Reliability",
     description:
-      "Consistent execution with clear responsibilities and accountability.",
+      "Clear ownership and consistent follow-through on the work we take on.",
   },
   {
     title: "Structure",
     description:
-      "Defined workflows and processes instead of ad-hoc task delegation.",
+      "Documented workflows and shared expectations, so support stays organized as volume grows.",
   },
   {
     title: "Responsiveness",
     description:
-      "Keep customers, teams, and business processes moving without unnecessary delays.",
+      "Customer and internal requests keep moving, even when your team is busy.",
   },
   {
     title: "Scalability",
     description:
-      "Expand operational capacity as your business grows without rebuilding your entire internal team.",
+      "Coverage can expand with your workload as your business adds clients and complexity.",
   },
 ];
 

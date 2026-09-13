@@ -27,7 +27,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Start With an Operational Growth Consultation"
-        description="A 30-minute conversation to understand your current operations, identify recurring bottlenecks, and determine whether additional operational support could create meaningful capacity for your business."
+        description="A 30-minute conversation about how your team works today, where recurring work is creating drag, and whether additional support would create useful capacity."
       />
       <section className="border-t border-slate-100 py-20">
         <div className="mx-auto w-full max-w-3xl px-6 lg:px-8">
@@ -43,8 +43,8 @@ export default function ContactPage() {
               >
                 hello@ghigha.com
               </a>{" "}
-              or book a consultation. No high-pressure sales pitch. If Ghigha
-              isn&apos;t the right fit, we&apos;ll tell you.
+              or book a consultation. We keep the conversation practical and
+              give you a clear recommendation either way.
             </p>
             <Link
               href={calendlyLink}
@@ -54,9 +54,6 @@ export default function ContactPage() {
             >
               Book an Operational Growth Consultation
             </Link>
-            <p className="mt-3 text-sm text-slate-500">
-              30 minutes · No pressure · Practical conversation
-            </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="rounded-xl bg-slate-50 p-4">
                 <p className="text-xs uppercase tracking-wide text-slate-500">

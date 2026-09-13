@@ -1,7 +1,7 @@
 {
-  "name": "Ghigha — Business Operations Support",
+  "name": "Ghigha Business Operations Support",
   "short_name": "Ghigha",
-  "description": "Ghigha helps growing businesses remove operational bottlenecks with structured business operations, executive support, customer communication, and workflow coordination.",
+  "description": "Ghigha provides business operations support for expanding teams, including executive coordination, customer communication, workflow management, and day-to-day administrative work.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

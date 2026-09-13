@@ -19,11 +19,11 @@ export const siteConfig = {
   defaultTitle:
     "Ghigha | Business Operations Support for Growing Businesses",
   description:
-    "Ghigha helps growing businesses remove operational bottlenecks with structured business operations, executive support, customer communication, and workflow coordination.",
+    "Ghigha provides business operations support for expanding teams, including executive coordination, customer communication, workflow management, and day-to-day administrative work.",
   keywords: [...seoKeywords],
   ogImage: "/og-image.png",
   ogImageAlt:
-    "Ghigha — Business Operations Support for Growing Businesses",
+    "Ghigha Business Operations Support for Growing Businesses",
   themeColor: "#05071C",
   locale: "en_US",
   email: "hello@ghigha.com",
@@ -43,31 +43,31 @@ export const pageSeo: Record<
         "Ghigha | Business Operations Support for Growing Businesses",
     },
     description:
-      "Ghigha helps growing businesses remove operational bottlenecks with structured business operations, executive support, customer communication, and workflow coordination.",
+      "Ghigha provides business operations support for expanding teams, including executive coordination, customer communication, workflow management, and day-to-day administrative work.",
     path: "/",
   },
   services: {
     title: "Operations Support Solutions",
     description:
-      "Explore Ghigha's business operations support — executive and administrative operations, customer communication, workflow coordination, and growth operations support.",
+      "See how Ghigha supports executive and administrative operations, customer communication, workflow coordination, and growth-related day-to-day work.",
     path: "/services",
   },
   pricing: {
     title: "Pricing",
     description:
-      "Operational capacity plans for growing businesses. Choose Starter, Growth, or Titan managed operations support based on the structure your business needs.",
+      "Starter, Growth, and Titan plans for companies that need structured operations support matched to their current stage.",
     path: "/pricing",
   },
   about: {
     title: "About",
     description:
-      "Learn how Ghigha helps growing businesses operate with more capacity, structure, and consistency through people, process, and technology-assisted support.",
+      "Learn how Ghigha helps leadership teams run recurring operations with more structure, consistency, and capacity.",
     path: "/about",
   },
   contact: {
     title: "Contact",
     description:
-      "Book an Operational Growth Consultation with Ghigha to identify bottlenecks and determine the right level of business operations support.",
+      "Book an Operational Growth Consultation with Ghigha to review bottlenecks and find the right level of operations support.",
     path: "/contact",
   },
 };

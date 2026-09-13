@@ -212,7 +212,7 @@ type DifferenceSectionProps = {
 };
 
 export function DifferenceSection({
-  title = "More Than Extra Hands. A Better Way to Operate.",
+  title = "A Reliable Operational Layer Built Around Your Business",
   description,
   items,
 }: DifferenceSectionProps) {
@@ -250,23 +250,20 @@ export function PeopleProcessSection() {
     <section className="bg-slate-50 py-16 sm:py-20">
       <div className="mx-auto w-full max-w-6xl px-6 lg:px-8">
         <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-          People + Process + Technology
+          People, Process, and Technology
         </h2>
         <div className="mt-6 max-w-3xl space-y-4 text-base leading-relaxed text-slate-600">
           <p>
-            Modern businesses don&apos;t need to choose between people and
-            technology.
+            Good operations usually need all three: people who can execute,
+            processes that keep work consistent, and tools that reduce busywork.
           </p>
           <p>
-            Ghigha combines human execution, structured processes, and
-            technology-assisted workflows to create a more efficient operational
-            system.
-          </p>
-          <p>
-            The goal isn&apos;t simply to add another person to your business.
+            Ghigha brings those pieces together so recurring work gets done with
+            clearer ownership and fewer dropped handoffs.
           </p>
           <p className="font-semibold text-slate-900">
-            The goal is to make your business easier to operate.
+            The aim is practical: help your business run more smoothly day to
+            day.
           </p>
         </div>
       </div>
@@ -279,22 +276,21 @@ export function BuiltAroundSection() {
     <section className="border-t border-slate-100 py-16 sm:py-20">
       <div className="mx-auto w-full max-w-6xl px-6 lg:px-8">
         <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-          Built Around Your Business
+          Support Shaped Around Your Workflows
         </h2>
         <div className="mt-6 max-w-3xl space-y-4 text-base leading-relaxed text-slate-600">
           <p>
-            Every business operates differently. That&apos;s why Ghigha
-            doesn&apos;t force every client into the same support model.
+            Every company runs differently. We start by learning your workflows,
+            priorities, and where the work is getting stuck.
           </p>
           <p>
-            We first understand your workflows, identify the areas creating
-            friction, and recommend the level of support that actually makes
-            sense.
+            From there, we recommend the coverage that fits your current stage,
+            with room to adjust as your needs change.
           </p>
           <p className="font-semibold text-slate-900">
-            You may not need our largest package.
+            We recommend the coverage that fits today, with room to scale as
+            your needs evolve.
           </p>
-          <p>We would rather recommend the right fit than oversell support.</p>
         </div>
       </div>
     </section>

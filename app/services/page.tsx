@@ -31,32 +31,29 @@ export default function ServicesPage() {
       />
       <PageHero
         eyebrow="Solutions"
-        title="Business Operations Support That Creates Capacity"
-        description="From executive coordination and customer communication to workflow execution and growth operations, Ghigha provides the people and structure needed to keep your business moving."
+        title="Support for the Work That Keeps Your Business Running"
+        description="Ghigha covers executive coordination, customer communication, workflow execution, and the administrative work that tends to pile up as a company grows."
       />
       <ServicesSection
-        title="What We Do"
-        description="Each solution is built around a business outcome — not a list of tasks to outsource."
+        title="Where Ghigha Can Help"
+        description="Each area is tied to a clear business outcome: less friction, clearer follow-through, and more capacity for your team."
         items={services}
       />
       <StepsSection
         id="how-ghigha-works"
-        title="How Ghigha Works"
-        description="We assess where capacity is leaking, build the right support structure, operate the work, and improve as you grow."
+        title="How We Work With Your Team"
+        description="We learn your workflows, put the right coverage in place, run the work, and refine it as needs change."
         items={steps}
       />
       <DifferenceSection
-        description="Ghigha is designed for businesses that have outgrown doing everything themselves but aren't ready to build another large internal team."
+        description="We work with companies that need dependable help with recurring operations and want a support model that stays organized as the business grows."
         items={differenceItems}
       />
       <PeopleProcessSection />
       <CtaBanner
-        title="Where Is Your Business Losing Capacity?"
-        body={`A 30-minute Operational Growth Consultation to understand your current operations, identify recurring bottlenecks, and determine whether additional operational support could create meaningful capacity for your business.
-
-No high-pressure sales pitch. If Ghigha isn't the right fit, we'll tell you.`}
+        title="Where Is Work Getting Stuck?"
+        body="In a 30-minute Operational Growth Consultation, we'll review how your team works today, where capacity is getting lost, and whether additional support would help. We'll give you a clear recommendation either way."
         buttonLabel="Book an Operational Growth Consultation"
-        note="30 minutes · No pressure · Practical conversation"
       />
     </SiteShell>
   );
