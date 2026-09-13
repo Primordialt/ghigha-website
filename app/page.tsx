@@ -111,7 +111,7 @@ export default function Home() {
       />
       <PeopleProcessSection />
       <PricingSection
-        description="Choose the level of operational capacity your business needs — not a headcount of assistants."
+        description="Choose the level of operational capacity your business needs."
         tiers={pricing}
       />
       <BuiltAroundSection />
